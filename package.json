@@ -1,0 +1,15 @@
+{
+  "name": "movie-booking-app",
+  "version": "1.0.0",
+  "description": "This is a movie booking application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app":"nodemon index.js"
+  },
+  "author": "kunalbhagwatbari",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

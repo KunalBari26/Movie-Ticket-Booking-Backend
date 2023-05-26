@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const serverConfig = require('./configs/server.config');
+const PORT = serverConfig.PORT
 
 
 
@@ -9,6 +10,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("Sever Started on Port 3000")
+app.listen(PORT,()=>{
+    console.log("Sever Started on Port ",PORT)
 })

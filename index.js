@@ -8,16 +8,16 @@ const uri = process.env.DB_URI;
 const client = new MongoClient(uri,{
     
 });
-console.log(process.env.DB_URI)
 async function run() {
   try {
     await client.connect();
-    const db = client.db('Movie Ticket Boking Application');
+    const db = client.db('MovieTicketBokingApplication');
     console.log("successfully connected to database")
   }
   finally {
-    await client.close();
-    console.log("closed connection with database")
+    // await client.close();
+    // console.log("closed connection with database")
+    console.log("still connected to database")
   }
 }
 run().catch(console.error);

@@ -1,0 +1,1 @@
+This folder has the sample data to feed in database for the first time run
